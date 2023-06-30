@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>AccessRecord data insertion</title>
+    
+</head>
+<body>
+    <center>
+        <h1>AccessRecord data insertion is successfully done</h1>
+        <form  method="POST">
+            {% csrf_token %}
+
+            <label for="tn">topic_name</label>
+            <input type="text" name="tn" id="tn"><br><br>
+
+            
+            <label for="name">name</label>
+            <input type="text" name="name" id="name"><br><br>
+            <label for="dt">date</label>
+            <input type="date" name="dt" id="dt"><br><br>
+            <label for="ar">author</label>
+            <input type="text" name="ar" id="ar"><br><br>
+
+            <input type="submit">
+
+
+        
+            
+
+
+
+        </form>
+    </center>
+    
+</body>
+</html>
